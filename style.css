@@ -6,7 +6,6 @@ body{
     margin: auto;
     background-color: #000;
     color: #FFF;
-
 }
 
 .info__image{
@@ -25,16 +24,23 @@ body{
     align-items: center;
     list-style: none;
 }
-.header__icon{
+
+.header__item:hover{
+    width: 70px;
+    cursor: pointer;
+    color: #CDAA7D;
+    border-bottom: 1px solid #CDAA7D;
+}
+
+.icon{
     width: 24px;
     height: 24px;
     background-color: #FFF;
 }
-.header__logo{
+.logo{
     width: 36px;
     height: 36px;
     background-color: #FFF;
-
 }
 
 
@@ -67,4 +73,113 @@ body{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 2;
+}
+
+.services__name{
+    font-size: 30px;
+}
+
+
+.companies{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1;
+}
+
+.companies__image{
+    opacity: 50%;
+}
+
+.works{
+    margin-top: 100px;
+}
+
+.works__title{
+    text-align: center;
+    font-size: 48px;
+}
+
+.works__categories{
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+.works__category:hover{
+    width: 70px;
+    cursor: pointer;
+    color: #CDAA7D;
+    border-bottom: 1px solid #CDAA7D;
+}
+
+
+.works__container{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px;
+
+}
+.works__image{
+    max-width: 450px;
+}
+
+
+footer{
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.contacts__list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    min-height: 200px;
+    flex-direction: column;
+}
+
+
+
+.contacts__list .contacts__item:first-child{
+    font-size: 24px;
+    font-weight: 700;
+}
+.contacts__item {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.time__list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    min-height: 150px;
+    flex-direction: column;
+}
+
+.time__list .time__item:first-child{
+    font-size: 24px;
+    font-weight: 700;
+}
+.time__item{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+}
+.social .icon{
+    margin-top: 20px;
+}
+.social__item{
+    font-size: 24px;
+    font-weight: 700;
 }
